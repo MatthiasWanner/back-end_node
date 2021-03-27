@@ -36,7 +36,7 @@ exports.login = (req, res, next) => {
             )          
           });
         })
-        .catch(error => res.status(500).json({ error: 'comprends pas' }));
+        .catch(error => res.status(500).json({ error }));
     })
-    .catch(error => res.status(500).json({ error: 'comprends pas 2' }));
+    .catch(error => res.status(500).json({ error }));
 };
